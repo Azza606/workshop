@@ -1,0 +1,26 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">userId</th>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">completed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of todolist">
+        <th scope="row">1</th>
+        <td>{{t.userId}}</td>
+        <td>{{t.id}}</td>
+        <td>{{t.title}}</td>
+        <td>{{t.completed}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+   <button  (click)="completedTrue()" >bilon</button>
+  <!--<div *ngIf="show==true">{{nbrElComp}}/{{nbrTot}}</div>--> 
+  <h1>nbr el completed true : {{nbrElComp}}</h1>

@@ -1,0 +1,25 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">username</th>
+        <th scope="col">email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of listUsers">
+        <th scope="row">1</th>
+        <td>{{u.id}}</td>
+        <td>{{u.name}}</td>
+        <td>{{u.username}}</td>
+        <td>{{u.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <form #f="ngForm">
+
+<input type="text" name="username" [(ngModel)]="u.username" #username="ngModel">
+<button (click)="nbrUsersOfUsername()">vérifier</button>
+   </form>
